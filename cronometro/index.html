@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src="index.js" defer></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .corpo{
+            /* background-color: rgb(29, 29, 29); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 7px solid rgb(39, 38, 38);
+        }
+
+        .corpo-content{
+            width: 220px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .display{
+            /* background-color: rgb(75, 72, 72); */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .display_interno{
+            /* background-color: rgb(214, 211, 211); */
+            width: 90%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btns{
+            margin-top: 30px;
+        }
+        .btns button{
+            background-color: white;
+            font-size: 16px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .pausar{
+            color: red;
+        }
+
+        .piscar{
+            display: none;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="corpo">
+        <div class="corpo-content">
+            <div class="display">
+                <div class="display_interno">
+                    <h1 id="cronometro">00:00:00</h1>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="iniciar">Iniciar</button>
+                <button id="pausar">Pausar</button>
+                <button id="zerar">Zerar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
